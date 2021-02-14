@@ -4,13 +4,13 @@ metadata:
   name: echo-ingress
 spec:
   rules:
-  - host: echo1.ck99.io
+  - host: echo1.k8s.digitalocean.ck99.io
     http:
       paths:
       - backend:
           serviceName: echo1
           servicePort: 80
-  - host: echo2.ck99.io
+  - host: echo2.k8s.digitalocean.ck99.io
     http:
       paths:
       - backend:
