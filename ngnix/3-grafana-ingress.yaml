@@ -8,7 +8,7 @@ spec:
   rules:
   - host: grafana.k8s.digitalocean.ck99.io
     http:
-      paths:
+      paths: /
       pathType: Exact
       - backend:
           service:
