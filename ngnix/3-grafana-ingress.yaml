@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: grafana-ingress
   annotations:
-    traefik.ingress.kubernetes.io/router.tls.certresolver: myresolver
+    traefik.ingress.kubernetes.io/router.tls.certresolver: default
 spec:
   rules:
     - host: grafana.k8s.digitalocean.ck99.io
