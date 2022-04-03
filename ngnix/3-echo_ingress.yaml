@@ -8,7 +8,7 @@ spec:
   rules:
   - host: echo1.k8s.digitalocean.ck99.io
     http:
-      paths:
+      paths: /
       pathType: Exact
       - backend:
           service:
@@ -17,7 +17,7 @@ spec:
               number: 80
   - host: echo2.k8s.digitalocean.ck99.io
     http:
-      paths:
+      paths: /
       pathType: Exact
       - backend:
           service:
