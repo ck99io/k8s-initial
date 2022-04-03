@@ -9,7 +9,7 @@ spec:
   - host: grafana.k8s.digitalocean.ck99.io
     http:
       paths: /
-      pathType: Exact
+      pathType: Prefix
       - backend:
           service:
             name: loki-grafana
