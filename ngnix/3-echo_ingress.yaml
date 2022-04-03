@@ -10,7 +10,7 @@ spec:
   - hosts:
     - echo1.k8s.digitalocean.ck99.io
     - echo2.k8s.digitalocean.ck99.io
-    secretName: hello-kubernetes-tls
+    secretName: echo-kubernetes-tls
   rules:
     - host: echo1.k8s.digitalocean.ck99.io
       http:
