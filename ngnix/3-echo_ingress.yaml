@@ -16,7 +16,6 @@ spec:
                 name: echo1
                 port:
                   number: 80
-  rules:
     - host: echo2.k8s.digitalocean.ck99.io
       http:
         paths:
