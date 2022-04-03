@@ -10,11 +10,15 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: echo1
-          servicePort: 80
+          service:
+            name: echo1
+            port: 
+              number: 80
   - host: echo2.k8s.digitalocean.ck99.io
     http:
       paths:
       - backend:
-          serviceName: echo2
-          servicePort: 80
+          service:
+            name: echo2
+            port: 
+              number: 80
