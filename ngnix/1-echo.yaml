@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: echo1
 spec:
+  type: ClusterIP
   ports:
   - port: 80
     targetPort: 5678
