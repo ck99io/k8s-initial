@@ -9,6 +9,9 @@ spec:
   - host: grafana.k8s.digitalocean.ck99.io
     http:
       paths:
+      pathType: Exact
       - backend:
-          serviceName: loki-grafana
-          servicePort: 80
+          service:
+            name: loki-grafana
+            port: 
+              number: 80
