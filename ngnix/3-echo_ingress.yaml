@@ -9,6 +9,7 @@ spec:
   - host: echo1.k8s.digitalocean.ck99.io
     http:
       paths:
+      pathType: Exact
       - backend:
           service:
             name: echo1
@@ -17,6 +18,7 @@ spec:
   - host: echo2.k8s.digitalocean.ck99.io
     http:
       paths:
+      pathType: Exact
       - backend:
           service:
             name: echo2
