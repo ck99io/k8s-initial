@@ -6,21 +6,24 @@ metadata:
     traefik.ingress.kubernetes.io/router.tls.certresolver: myresolver
 spec:
   rules:
-  - host: echo1.k8s.digitalocean.ck99.io
-    http:
-      paths: /
-      pathType: Prefix
-      - backend:
-          service:
-            name: echo1
-            port: 
-              number: 80
-  - host: echo2.k8s.digitalocean.ck99.io
-    http:
-      paths: /
-      pathType: Prefix
-      - backend:
-          service:
-            name: echo2
-            port: 
-              number: 80
+    - host: echo1.k8s.digitalocean.ck99.io
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: echo1
+                port:
+                  number: 80
+  rules:
+    - host: echo2.k8s.digitalocean.ck99.io
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: echo2
+                port:
+                  number: 80
