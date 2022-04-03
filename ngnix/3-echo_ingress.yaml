@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: echo-ingress
   annotations:
-    traefik.ingress.kubernetes.io/router.tls.certresolver: default
+    kubernetes.io/ingress.class: nginx
 spec:
   rules:
     - host: echo1.k8s.digitalocean.ck99.io
