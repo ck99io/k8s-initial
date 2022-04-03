@@ -6,12 +6,13 @@ metadata:
     traefik.ingress.kubernetes.io/router.tls.certresolver: myresolver
 spec:
   rules:
-  - host: grafana.k8s.digitalocean.ck99.io
-    http:
-      paths: /
-      pathType: Prefix
-      - backend:
-          service:
-            name: loki-grafana
-            port: 
-              number: 80
+    - host: grafana.k8s.digitalocean.ck99.io
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: loki-grafana
+                port:
+                  number: 80
